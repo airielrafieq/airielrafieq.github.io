@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IoT Smart Math Challenge Case Study — An interactive ESP32 quiz system and web leaderboard built by Airiel Rafieq.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>IoT Smart Math Challenge | Airiel Rafieq</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html">Airiel Rafieq<i>.</i></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#activities">Activities</a>
+        <a href="index.html#reflection">Reflection</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="sec" style="border-bottom: 0; padding-bottom: 48px;">
+      <a class="mono red" href="index.html#projects" style="display: inline-block; margin-bottom: 24px;">&larr; Back to projects</a>
+      <p class="mono" style="margin-bottom: 14px;">Project 02 &bull; Education &amp; IoT</p>
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.4rem); margin-bottom: 20px;">IoT Smart Math <em>Challenge</em></h1>
+      <p class="lead" style="max-width: 680px;">
+        An interactive mathematics learning project that combines an ESP32 quiz system with a web
+        application to make mathematics practice more engaging.
+      </p>
+
+      <div class="facts" style="margin-top: 48px;">
+        <div><span class="mono">Event</span><strong>InnoMath 2025</strong></div>
+        <div><span class="mono">Platform</span><strong>ESP32 &middot; Firebase &middot; Web</strong></div>
+        <div><span class="mono">Role</span><strong>Developer</strong></div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="sec" id="overview">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>01</b> / Details</span>
+          <h2>Project Overview</h2>
+        </div>
+        <div class="reveal">
+          <p class="sec-intro" style="color: #d4d4d4; font-size: 1.1rem; line-height: 1.8;">
+            The system uses an LCD to display mathematical questions and a 4&times;4 keypad for students to
+            submit their answers. A buzzer provides feedback, while a web application supports player
+            registration and leaderboard presentation.
+          </p>
+          <p style="color: var(--muted); margin-bottom: 32px;">
+            Firebase and REST-based communication were explored to exchange information between the web
+            application and the ESP32 system, including player information and scores.
+          </p>
+
+          <div class="thumb" style="border: 1px solid var(--line); background: var(--bg-2);">
+            <img src="images/IoT Smart Math Challenge Poster.png" alt="IoT Smart Math Challenge interface" loading="lazy" style="width: 100%; height: auto; filter: grayscale(.2);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTIONS -->
+    <section class="sec" id="contributions">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>02</b> / Role</span>
+          <h2>My Contributions</h2>
+        </div>
+        <div class="reveal">
+          <div class="rows">
+            <div class="skill"><span class="n">01</span><h3>Concept &amp; Design</h3><p>Developed the concept of an interactive IoT mathematics challenge.</p></div>
+            <div class="skill"><span class="n">02</span><h3>Hardware Integration</h3><p>Programmed ESP32, I2C LCD, 4&times;4 matrix keypad, and buzzer feedback.</p></div>
+            <div class="skill"><span class="n">03</span><h3>Web Development</h3><p>Built user registration, live quiz support, and real-time leaderboard pages.</p></div>
+            <div class="skill"><span class="n">04</span><h3>Cloud &amp; Data</h3><p>Integrated Firebase real-time database and managed live score handling.</p></div>
+          </div>
+
+          <div class="goal" style="margin-top: 40px;">
+            <span class="mono red">Key Learning</span>
+            <p>Microcontroller programming, web development, database integration, data handling, and real-time hardware debugging.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA / DEMO -->
+    <section class="sec" id="media">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>03</b> / Showcase</span>
+          <h2>Poster &amp; Demo</h2>
+        </div>
+        <div class="reveal">
+          <p class="sec-intro">Explore the poster, video demonstration, and web application.</p>
+          
+          <div class="activity" style="margin-bottom: 32px;">
+            <img src="images/posteriosafe.png" alt="InnoMath 2025 Poster" loading="lazy">
+            <div>
+              <span class="mono">Project Poster</span>
+              <h3>InnoMath 2025 E-Poster</h3>
+              <p>Official exhibition poster detailing the architecture, hardware schematics, and workflow.</p>
+              <a class="btn line" href="images/Shin-chan group e-poster.pdf" target="_blank" rel="noopener noreferrer">View PDF Poster &rarr;</a>
+            </div>
+          </div>
+
+          <div class="links" style="max-width: 100%; margin-top: 32px;">
+            <a href="https://drive.google.com/file/d/1Q7OXmVhhHLWHkp21j_22JaUSJQe2-PJ9/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+              <span>Watch Video Demonstration</span>
+              <span>Google Drive &nearr;</span>
+            </a>
+            <a href="https://iotmathspeedchallenge.web.app" target="_blank" rel="noopener noreferrer">
+              <span>Try Live Web Application</span>
+              <span>Firebase Web App &nearr;</span>
+            </a>
+          </div>
+
+          <div class="actions" style="margin-top: 48px; justify-content: space-between;">
+            <a class="btn line" href="iosafe.html">&larr; Previous: IoSafe</a>
+            <a class="btn solid" href="index.html#projects">All Projects &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <span class="mono">&copy; 2026 Muhammad Airiel Rafieq bin Roslan</span>
+      <span class="mono">SCST1133 &mdash; Data Engineering Ecosystem</span>
+      <a class="mono" href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>

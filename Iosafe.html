@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IoSafe Case Study — A student safety IoT concept with SOS and fall detection by Airiel Rafieq.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>IoSafe | Airiel Rafieq</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html">Airiel Rafieq<i>.</i></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#activities">Activities</a>
+        <a href="index.html#reflection">Reflection</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="sec" style="border-bottom: 0; padding-bottom: 48px;">
+      <a class="mono red" href="index.html#projects" style="display: inline-block; margin-bottom: 24px;">&larr; Back to projects</a>
+      <p class="mono" style="margin-bottom: 14px;">Project 01 &bull; IoT &amp; Safety</p>
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.4rem); margin-bottom: 20px;">IoSafe &mdash; Student Safety <em>IoT System</em></h1>
+      <p class="lead" style="max-width: 680px;">
+        A student safety concept designed to help students in college and hostel environments
+        send emergency alerts to wardens and selected contacts.
+      </p>
+
+      <div class="facts" style="margin-top: 48px;">
+        <div><span class="mono">Course</span><strong>CT115 / CT125</strong></div>
+        <div><span class="mono">Platform</span><strong>ESP32 &middot; Firebase</strong></div>
+        <div><span class="mono">Role</span><strong>Team Leader</strong></div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="sec" id="overview">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>01</b> / Details</span>
+          <h2>Project Overview</h2>
+        </div>
+        <div class="reveal">
+          <div class="cols" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 40px;">
+            <div class="col">
+              <span class="mono">The Problem</span>
+              <h3>Emergency Delays</h3>
+              <p>Students living in hostels or colleges may not be able to call for help quickly during an emergency such as a fall, an accident or a safety threat.</p>
+            </div>
+            <div class="col">
+              <span class="mono">The Solution</span>
+              <h3>IoT Incident Alerting</h3>
+              <p>IoSafe uses an ESP32 microcontroller and sensors to support manual SOS activation and fall or impact detection alongside real-time location tracking for wardens.</p>
+            </div>
+          </div>
+
+          <div class="thumb" style="border: 1px solid var(--line); background: var(--bg-2);">
+            <img src="images/posteriosafe.png" alt="IoSafe student safety IoT system poster" loading="lazy" style="width: 100%; height: auto; filter: grayscale(.1);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTIONS -->
+    <section class="sec" id="contributions">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>02</b> / Role</span>
+          <h2>My Contributions</h2>
+        </div>
+        <div class="reveal">
+          <div class="rows">
+            <div class="skill"><span class="n">01</span><h3>Hardware Prototyping</h3><p>Explored ESP32 hardware, sensor wiring, and circuit architecture.</p></div>
+            <div class="skill"><span class="n">02</span><h3>Detection Logic</h3><p>Developed logic for manual SOS buttons and automatic impact/fall triggers.</p></div>
+            <div class="skill"><span class="n">03</span><h3>Web &amp; Database</h3><p>Integrated Firebase to store emergency logs and display warden alerts.</p></div>
+            <div class="skill"><span class="n">04</span><h3>System Design</h3><p>Designed communication flows connecting students, wardens, and location data.</p></div>
+          </div>
+
+          <div class="goal" style="margin-top: 40px;">
+            <span class="mono red">Key Learning</span>
+            <p>IoT architecture, embedded systems, sensor integration, system design, and real-world safety problem-solving.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY & PROTOTYPE -->
+    <section class="sec" id="showcase">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>03</b> / Showcase</span>
+          <h2>Photos &amp; Prototype</h2>
+        </div>
+        <div class="reveal">
+          <p class="sec-intro">Hardware setup, team sessions, and user interface prototype.</p>
+
+          <div class="rows" style="margin-bottom: 40px;">
+            <article class="edu">
+              <span class="when">Hardware</span>
+              <div>
+                <h3>ESP32 &amp; Circuit Wiring</h3>
+                <p class="d">Breadboard layout connecting emergency push buttons, sensors, and status indicators.</p>
+              </div>
+              <img src="images/setup.JPG" alt="IoSafe ESP32 hardware setup" loading="lazy">
+            </article>
+
+            <article class="edu">
+              <span class="when">Sensors</span>
+              <div>
+                <h3>Wiring &amp; Sensor Calibration</h3>
+                <p class="d">Integration of sensors configured for automatic incident and fall detection.</p>
+              </div>
+              <img src="images/wiring.JPG" alt="IoSafe sensor and wiring" loading="lazy">
+            </article>
+
+            <article class="edu">
+              <span class="when">Teamwork</span>
+              <div>
+                <h3>Development Session</h3>
+                <p class="d">Collaborative testing and troubleshooting hardware behavior with real-time Firebase syncing.</p>
+              </div>
+              <img src="images/meeting session.JPG" alt="IoSafe team working on the project" loading="lazy">
+            </article>
+          </div>
+
+          <div class="links" style="max-width: 100%; margin-top: 24px;">
+            <a href="https://www.figma.com/proto/5IOFSxGZLOmyzNg72ksN2p/iosafe--Community-?node-id=3-1288&p=f&t=TUGlfXGeeuXaWDKN-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
+              <span>Interactive Figma Prototype</span>
+              <span>Open Figma &nearr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTATION & REPORT -->
+    <section class="sec" id="report">
+      <div class="sec-grid">
+        <div class="sec-head">
+          <span class="mono"><b>04</b> / Report</span>
+          <h2>Full Documentation</h2>
+        </div>
+        <div class="reveal">
+          <p class="sec-intro">Read the complete CT125 project report detailing system architecture and results.</p>
+
+          <div class="links" style="max-width: 100%; margin-bottom: 40px;">
+            <a href="artifacts/CT125_16_P72.pdf" target="_blank" rel="noopener noreferrer">
+              <span>View Report PDF in New Tab</span>
+              <span>CT125_16_P72.pdf &nearr;</span>
+            </a>
+            <a href="artifacts/CT125_16_P72.pdf" download>
+              <span>Download Complete PDF Report</span>
+              <span>Direct Download &darr;</span>
+            </a>
+          </div>
+
+          <div class="actions" style="margin-top: 48px; justify-content: space-between;">
+            <a class="btn line" href="index.html#projects">&larr; All Projects</a>
+            <a class="btn solid" href="innomath.html">Next: IoT Smart Math Challenge &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <span class="mono">&copy; 2026 Muhammad Airiel Rafieq bin Roslan</span>
+      <span class="mono">SCST1133 &mdash; Data Engineering Ecosystem</span>
+      <a class="mono" href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
